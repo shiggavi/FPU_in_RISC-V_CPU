@@ -1,0 +1,67 @@
+1) fmadd  fd,fs1,fs2,fs3 multiply-add fd =   fs1 * fs2 + fs3  
+
+2) fmsub  fd,fs1,fs2,fs3 multiply-subtract fd =   fs1 * fs2 — fs3 
+
+3) fnmsub fd,fs1,fs2,fs3 negate multiply-add fd = —(fs1 * fs2 + fs3) 
+
+4) fnmadd fd,fs1,fs2,fs3 negate multiply-subtract fd = —(fs1 * fs2 – fs3) 
+
+5) fadd   fd,fs1,fs2 add fd =   fs1 + fs2 
+
+6) fsub   fd,fs1,fs2 subtract fd =   fs1 — fs2 
+
+7) fmul   fd,fs1,fs2 multiply fd =   fs1 * fs2 
+
+8) fdiv   fd,fs1,fs2 divide fd =   fs1 / fs2  
+
+9) fsqrt  fd,fs1 square root fd = sqrt(fs1) 
+
+10) fsgnj  fd,fs1,fs2 sign injection fd = fs1, sign =  sign(fs2)  
+
+11) fsgnjn fd,fs1,fs2 negate sign injection fd = fs1, sign = —sign(fs2) 
+
+12) fsgnjx fd,fs1,fs2 xor sign injection fd = fs1, sign = sign(fs2) ^ sign(fs1) 
+
+13) fmin   fd,fs1,fs2 min fd = min(fs1, fs2) 
+
+14) fmax   fd,fs1,fs2 max fd = max(fs1, fs2) 
+
+15) feq    rd,fs1,fs2 compare = rd = (fs1 == fs2) 
+
+16) flt    rd,fs1,fs2 compare < rd = (fs1 < fs2) 
+
+17) fle    rd,fs1,fs2 compare ≤ rd = (fs1 ≤ fs2) 
+
+18) fclass rd,fs1 classify rd = classification of fs1 
+
+19) flw       fd, imm(rs1) load float fd = [Address]31:0  
+
+20) fsw       fs2,imm(rs1) store float [Address]31:0 = fd 
+
+21) fcvt.w.s  rd, fs1 convert to integer rd = integer(fs1) 
+
+22) fcvt.wu.s rd, fs1 convert to unsigned integer rd = unsigned(fs1) 
+
+23) fcvt.s.w  fd, rs1 convert int to float fd = float(rs1)  
+
+24) fcvt.s.wu fd, rs1 convert unsigned to float fd = float(rs1) 
+
+25) fmv.x.w   rd, fs1 move to integer register rd = fs1 
+
+26) fmv.w.x   fd, rs1 move to f.p. register fd = rs1 
+
+27) fld       fd, imm(rs1) load double fd = [Address]63:0
+
+28)fsd       fs2,imm(rs1) store double [Address]63:0 = fd  
+
+29) fcvt.w.d  rd, fs1 convert to integer rd = integer(fs1) 
+
+30) fcvt.wu.d rd, fs1 convert to unsigned integer rd = unsigned(fs1)
+
+31) fcvt.d.w  fd, rs1 convert int to double fd = double(rs1) 
+
+32) fcvt.d.wu fd, rs1 convert unsigned to double fd = double(rs1)
+
+33) fcvt.s.d  fd, fs1  convert double to float fd = float(fs1) 
+
+34) fcvt.d.s  fd, fs1 convert float to double
