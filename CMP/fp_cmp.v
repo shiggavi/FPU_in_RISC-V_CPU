@@ -4,8 +4,8 @@ module fp_cmp (
     input  [64:0] data1_in,
     input  [64:0] data2_in,
     input  [2:0]  rm_in,
-    input  signed [9:0]  class1_in,
-    input  signed [9:0]  class2_in,
+    input  [9:0]  class1_in,
+    input  [9:0]  class2_in,
     output reg [63:0] result_out,
     output reg [4:0]  flags_out
 );
