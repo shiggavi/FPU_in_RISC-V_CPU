@@ -3,7 +3,7 @@
 module tb_fp_max;
 
   // ----------------------------------
-  // DUT I/O (pure Verilog types)
+  // DUT I/O 
   // ----------------------------------
   reg  [63:0] fp_max_in_data1;
   reg  [63:0] fp_max_in_data2;
@@ -34,7 +34,7 @@ module tb_fp_max;
   );
 
   // ----------------------------------
-  // Constants / helpers (pure Verilog)
+  // Constants / helpers 
   // ----------------------------------
   // class[*] bit positions used by DUT
   parameter SNaN_BIT = 8;
@@ -66,15 +66,15 @@ module tb_fp_max;
 
   integer error_count;
 
-  // Classes used (declare at module scope!)
+  // Classes used
   reg [9:0] CLASS_NUM;
   reg [9:0] CLASS_QNAN;
   reg [9:0] CLASS_SNAN;
 
-  // Operand payloads (declare at module scope!)
+  // Operand payloads 
   reg [63:0] VAL_A, VAL_B, VAL_C, VAL_PZ, VAL_NZ;
 
-  // Magnitude keys (declare at module scope!)
+  // Magnitude keys 
   reg [63:0] MAG_10, MAG_20, MAG_EQ, MAG_0;
 
   // Self-checking vector driver (name passed as packed string)
